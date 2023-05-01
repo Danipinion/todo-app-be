@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJkYW5pIiwiZW1haWwiOiJkYW5pQGdtYWlsLmNvbSIsImlhdCI6MTY4MjkwNTI3NywiZXhwIjoxNjgyOTA1MjkyfQ.qQR5TFs1sF_U3oie9WSdGCor3ogM8kDiYJL_ZLI1DH4
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "dani 1",
+    "email": "dani1@gmail.com",
+    "password": "12342",
+    "confPassword": "12345"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "dani@gmail.com",
+    "password": "12345"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
